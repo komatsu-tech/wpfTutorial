@@ -28,7 +28,7 @@ namespace WpfApp1
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             // view expense report
-            ReportPage reportPage = new ReportPage();
+            ReportPage reportPage = new ReportPage(this.peopleListBox.SelectedItem);
             this.NavigationService.Navigate(reportPage);
         }
     }
